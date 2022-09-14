@@ -14,6 +14,12 @@
 		1F12D8C928D1E5FA00944B37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F12D8C828D1E5FA00944B37 /* Assets.xcassets */; };
 		1F12D8CC28D1E5FA00944B37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F12D8CA28D1E5FA00944B37 /* LaunchScreen.storyboard */; };
 		1F12D8F028D1E6CB00944B37 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D8EF28D1E6CA00944B37 /* WeatherModel.swift */; };
+		1F12D90A28D1E74200944B37 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D90728D1E74200944B37 /* WeatherViewModel.swift */; };
+		1F12D90B28D1E74200944B37 /* HourlyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D90828D1E74200944B37 /* HourlyViewModel.swift */; };
+		1F12D90C28D1E74200944B37 /* DailyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D90928D1E74200944B37 /* DailyViewModel.swift */; };
+		1F12D91928D1E77300944B37 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D91628D1E77200944B37 /* DoubleExtension.swift */; };
+		1F12D91A28D1E77300944B37 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D91728D1E77200944B37 /* DateExtension.swift */; };
+		1F12D91D28D1E80900944B37 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D91C28D1E80900944B37 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		1F12D8CB28D1E5FA00944B37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F12D8CD28D1E5FA00944B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F12D8EF28D1E6CA00944B37 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		1F12D90728D1E74200944B37 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		1F12D90828D1E74200944B37 /* HourlyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyViewModel.swift; sourceTree = "<group>"; };
+		1F12D90928D1E74200944B37 /* DailyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyViewModel.swift; sourceTree = "<group>"; };
+		1F12D91628D1E77200944B37 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		1F12D91728D1E77200944B37 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		1F12D91C28D1E80900944B37 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,9 @@
 		1F12D8BE28D1E5F900944B37 /* WeatherApplication */ = {
 			isa = PBXGroup;
 			children = (
+				1F12D91B28D1E80900944B37 /* Utilities */,
+				1F12D91428D1E77200944B37 /* Extension */,
+				1F12D90628D1E74200944B37 /* ViewModel */,
 				1F12D8EE28D1E6CA00944B37 /* Model */,
 				1F12D8BF28D1E5F900944B37 /* AppDelegate.swift */,
 				1F12D8C128D1E5F900944B37 /* SceneDelegate.swift */,
@@ -76,6 +91,33 @@
 				1F12D8EF28D1E6CA00944B37 /* WeatherModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1F12D90628D1E74200944B37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F12D90728D1E74200944B37 /* WeatherViewModel.swift */,
+				1F12D90828D1E74200944B37 /* HourlyViewModel.swift */,
+				1F12D90928D1E74200944B37 /* DailyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F12D91428D1E77200944B37 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1F12D91628D1E77200944B37 /* DoubleExtension.swift */,
+				1F12D91728D1E77200944B37 /* DateExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1F12D91B28D1E80900944B37 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1F12D91C28D1E80900944B37 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F12D90A28D1E74200944B37 /* WeatherViewModel.swift in Sources */,
+				1F12D91D28D1E80900944B37 /* Constants.swift in Sources */,
+				1F12D91A28D1E77300944B37 /* DateExtension.swift in Sources */,
+				1F12D90B28D1E74200944B37 /* HourlyViewModel.swift in Sources */,
 				1F12D8C428D1E5F900944B37 /* ViewController.swift in Sources */,
+				1F12D91928D1E77300944B37 /* DoubleExtension.swift in Sources */,
 				1F12D8C028D1E5F900944B37 /* AppDelegate.swift in Sources */,
 				1F12D8F028D1E6CB00944B37 /* WeatherModel.swift in Sources */,
+				1F12D90C28D1E74200944B37 /* DailyViewModel.swift in Sources */,
 				1F12D8C228D1E5F900944B37 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
