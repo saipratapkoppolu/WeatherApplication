@@ -72,4 +72,18 @@ class WeatherViewModel {
     func getSectionTitle(for section: Int) -> String {
         section == 0 ? Constants.hoursSectionTitle : Constants.daysSectionTitle
     }
+    
+    func fetchWeather(completion: (() -> Void)? = nil) {
+        WeatherService().fetchWeather(for: location) { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let weatherModel):
+                    self?.weather = weatherModel
+                    completion?()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+    }
 }

@@ -20,6 +20,8 @@
 		1F12D91928D1E77300944B37 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D91628D1E77200944B37 /* DoubleExtension.swift */; };
 		1F12D91A28D1E77300944B37 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D91728D1E77200944B37 /* DateExtension.swift */; };
 		1F12D91D28D1E80900944B37 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D91C28D1E80900944B37 /* Constants.swift */; };
+		1F12D91F28D1EA2000944B37 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D91E28D1EA2000944B37 /* UIImageViewExtension.swift */; };
+		1F12D92828D1EB8400944B37 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12D92728D1EB8400944B37 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		1F12D91628D1E77200944B37 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		1F12D91728D1E77200944B37 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		1F12D91C28D1E80900944B37 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1F12D91E28D1EA2000944B37 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		1F12D92728D1EB8400944B37 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		1F12D8BE28D1E5F900944B37 /* WeatherApplication */ = {
 			isa = PBXGroup;
 			children = (
+				1F12D92628D1EB8400944B37 /* Service */,
 				1F12D91B28D1E80900944B37 /* Utilities */,
 				1F12D91428D1E77200944B37 /* Extension */,
 				1F12D90628D1E74200944B37 /* ViewModel */,
@@ -106,6 +111,7 @@
 		1F12D91428D1E77200944B37 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1F12D91E28D1EA2000944B37 /* UIImageViewExtension.swift */,
 				1F12D91628D1E77200944B37 /* DoubleExtension.swift */,
 				1F12D91728D1E77200944B37 /* DateExtension.swift */,
 			);
@@ -118,6 +124,14 @@
 				1F12D91C28D1E80900944B37 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1F12D92628D1EB8400944B37 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1F12D92728D1EB8400944B37 /* WeatherService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +209,10 @@
 				1F12D91D28D1E80900944B37 /* Constants.swift in Sources */,
 				1F12D91A28D1E77300944B37 /* DateExtension.swift in Sources */,
 				1F12D90B28D1E74200944B37 /* HourlyViewModel.swift in Sources */,
+				1F12D92828D1EB8400944B37 /* WeatherService.swift in Sources */,
 				1F12D8C428D1E5F900944B37 /* ViewController.swift in Sources */,
 				1F12D91928D1E77300944B37 /* DoubleExtension.swift in Sources */,
+				1F12D91F28D1EA2000944B37 /* UIImageViewExtension.swift in Sources */,
 				1F12D8C028D1E5F900944B37 /* AppDelegate.swift in Sources */,
 				1F12D8F028D1E6CB00944B37 /* WeatherModel.swift in Sources */,
 				1F12D90C28D1E74200944B37 /* DailyViewModel.swift in Sources */,
